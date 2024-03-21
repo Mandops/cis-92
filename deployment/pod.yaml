@@ -12,15 +12,15 @@ spec:
     - containerPort: 8000
     resources:
       requests:
-        cpu: 250m 
+        cpu: 500m 
         memory: 512Mi
         ephemeral-storage: 10Mi
       limits:
-        cpu: 250m 
+        cpu: 500m 
         memory: 512Mi
         ephemeral-storage: 10Mi
-    env:
-    - name: STUDENT_NAME
-      value: "Armando's Project"
-    - name: SITE_NAME
-      value: "*"            
+    envFrom:
+    - configMapRef:
+        name: mysite-config
+    - secretRef:
+        name: mysite-secret           
