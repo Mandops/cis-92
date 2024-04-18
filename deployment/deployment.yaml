@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
+      - name: nginx/
         image: nginx:stable-bullseye
         ports:
         - containerPort: 80
