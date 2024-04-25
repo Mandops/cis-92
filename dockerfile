@@ -15,13 +15,12 @@ ENV STUDENT_NAME="Armando"
 ENV SITE_NAME="Armando's site"
 ENV SECRET_KEY="Password_12348488238823495129519823591"
 ENV DEBUG=1
-ENV DATA_DIR=/data
-
 
 ENV POSTGRES_DB="mysite"
 ENV POSTGRES_USER="mysiteuser"
 ENV POSTGRES_PASSWORD="this-is-a-bad-password"
 ENV POSTGRES_HOSTNAME="localhost"
+
 # Set the working directory
 WORKDIR /mysite 
 
