@@ -43,7 +43,7 @@ This is my project.
 |ephemeral-storage | 100Mi |
 
 ## Start up commands
-helm install postgres oci://registry-1.docker.io/bitnamicharts/postgresql --values values-postgres.yaml 
+helm install postgres1 oci://registry-1.docker.io/bitnamicharts/postgresql --values values-postgres.yaml 
 
 kubectl apply -f deployment/
 
@@ -58,7 +58,7 @@ python manage.py createsuperuser
 kubectl delete -f deployment/
 
 ### Delete Postgres 
-helm uninstall postgres
+helm uninstall postgres1
 #
 
 
