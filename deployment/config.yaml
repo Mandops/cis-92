@@ -8,4 +8,4 @@ data:
     SITE_NAME: "*"
     DEBUG: "1"
     POSTGRES_DB: "mysite"
-    POSTGRES_HOSTNAME: "postgres-postgresql"
+    POSTGRES_HOSTNAME: "postgres1-postgresql"
